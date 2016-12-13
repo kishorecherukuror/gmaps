@@ -22,18 +22,10 @@
                 <div class="location_panel">
                 <h2>Locations</h2>
                     <ul>
-	                <% @places.each do |p|%>
-	                	<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> <%= p["address"] %> <span class="light_txt">(1)</span></a> </li>
+	                <% @places["locations"].each do |p|%>
+	                	<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> <%= p["latitudeE7"] %>, <%= p["longitudeE7"] %> <span class="light_txt">(1)</span></a> </li>
 	                <% end %>
                     </ul>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-9">
-                <div class="input-group">
-                  <input type="text" class="form-control search_bar" placeholder="Search by name">
-                  <div class="input-group-btn">
-                    <button class="btn search_bar_btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                  </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9">
