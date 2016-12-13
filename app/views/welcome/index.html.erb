@@ -1,0 +1,32 @@
+
+
+ 		<!-- scrollToTop -->	
+		<a href="#" class="scrollToTop">
+			<i class="fa fa-angle-up fa-2x"></i>
+		</a>
+		<!-- ./scrollToTop -->
+        		 
+		<!-- header -->	
+			<%= render "header" %>
+		<!-- ./header -->	
+				
+		<!-- Top banner -->	
+		<section id="slider-banner" class="section blue-bg">
+			<div class="container">
+            <div class="banner_search_mod">	
+                 <h2>Search People. <span>Reunite.</span></h2>	
+                 <div class="col-xs-12 col-sm-9 col-md-9">
+                    <div class="form-group">
+                    <%= form_tag welcome_result_path do %>
+                      <%= text_field_tag :search, nil,class:  "form-control banner_search", placeholder: "Enter a First and Last Name"  %>
+                    </div>
+                 </div>
+                 <div class="ol-xs-12 col-sm-3 col-md-3">
+                    <%= submit_tag "search" , class: "button submit" %>
+                 </div>
+                 <% end %>
+            </div>							
+			</div>		
+		</section>
+		<!-- ./Top banner -->
+        
